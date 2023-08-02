@@ -1,0 +1,57 @@
+<body>
+    <h1>オープンキャンパスへの申し込み</h1>
+    <form action="sample.php" method="post" name="contact-form">
+        <dl>
+            <dt><label class="label" for="name" name="your-name">名前*</label></dt>
+            <dd><input id="name" type="text" placeholder="例)山田太郎" required></dd>
+        
+            <dt><label class="label" for="mail" name="mail">メール*</label></dt>
+            <dd><input id="mail" type="text" required></dd>
+
+            <dt><label class="label" for="birthday" name="birthday">生年月日</label></dt>
+            <dd><select name="year">
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                </select>年<select name="month">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    </select>月
+            </dd>
+            <dt><label class="label" for="gakka" name="gakka">興味のある学科</label></dt>
+            <dd><label><input type="checkbox" name="gakka" value="機械工学科">機械工学科</label>
+                <label><input type="checkbox" name="gakka" value="電気電子工学科">電気電子工学科</label>
+                <label><input type="checkbox" name="gakka" value="応用化学科">応用化学科</label>
+                <label><input type="checkbox" name="gakka" value="ロボティクス工学科">ロボティクス工学科</label>
+                <label><input type="checkbox" name="gakka" value="情報メディア工学科">情報メディア工学科</label>
+                <label><input type="checkbox" name="gakka" value="建築学科">建築学科</label>
+                <label><input type="checkbox" name="gakka" value="生活環境学科">生活環境学科</label>
+            </dd>
+            <dt>
+                <label class="label" for="yobo" name="yobo">ご要望：</label>  
+            </dt>
+            <dd>
+                <textarea name="yobo" cols="30" rows="10" wrap="soft"
+                maxlength="500" minlength="1"></textarea>
+            </dd>
+        </dl>
+        <input type="submit" value="送信する">
+    </form>
+</body>
